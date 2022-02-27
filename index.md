@@ -101,11 +101,73 @@ Finally, that takes us to the locally weighted regression we have:
   
 
 ### Gradient Boosting
-la la la
+Assume you have an regressor $F$ and, for the observation $x_i$ we make the prediction $F(x_i)$. To improve the predictions, we can regard $F$ as a 'weak learner' and therefore train a decision tree (we can call it $h$) where the new output is $y_i-F(x_i)$. Thus, there are increased chances that the new regressor
+
+$$\large F + h$$ 
+
+is better than the old one, $F.$
 
 
 ## Extreme Gradient Boosting
 la la la 
+
+  
+## Code and Results
+  
+  
+  I included the K-Fold Cross Validation inside the loop to increase validity.
+  
+  ```markdown
+ `mse_tri = []
+mse_epa = []
+mse_quar = []
+mse_blwr = []
+mse_rf = []
+mse_xgb = []
+mse_nn = []
+
+for i in range(10):
+  kf = KFold(n_splits=10,shuffle=True,random_state=i) #randomizing the random state through this loop
+  # this is the Cross-Validation Loop
+  for idxtrain, idxtest in kf.split(X):
+    xtrain = X[idxtrain]
+    ytrain = y[idxtrain]
+    ytest = y[idxtest]
+    xtest = X[idxtest]
+    xtrain = scale.fit_transform(xtrain)
+    xtest = scale.transform(xtest)
+
+    # LOWESS - TRICUBIC
+    yhat_tri = lw_reg(xtrain,ytrain, xtest,Tricubic,tau=1.2,intercept=True)
+    mse_tri.append(mse(ytest,yhat_tri))
+
+    # LOWESS - EPANECHNIKOV
+    yhat_epa = lw_reg(xtrain,ytrain, xtest,Epanechnikov,tau=1.2,intercept=True)
+    mse_epa.append(mse(ytest,yhat_epa))
+
+    # LOWESS - QUARTIC
+    yhat_quar = lw_reg(xtrain,ytrain, xtest,Quartic,tau=1.2,intercept=True)
+    mse_quar.append(mse(ytest,yhat_quar))
+
+    # BOOSTED LOWESS
+    yhat_blwr = boosted_lwr(xtrain,ytrain, xtest,Tricubic,tau=1.2,intercept=True)
+    mse_blwr.append(mse(ytest,yhat_blwr))
+
+    # RANDOM FOREST
+    model_rf = RandomForestRegressor(n_estimators=100,max_depth=3)
+    model_rf.fit(xtrain,ytrain)
+    yhat_rf = model_rf.predict(xtest)
+    mse_rf.append(mse(ytest,yhat_rf))
+
+    # XGBOOST
+    model_xgb.fit(xtrain,ytrain)
+    yhat_xgb = model_xgb.predict(xtest)
+    mse_xgb.append(mse(ytest,yhat_xgb))` 
+
+```
+  
+  The results were as followed: 
+  <img width="455" alt="Screen Shot 2022-02-27 at 5 36 32 PM" src="https://user-images.githubusercontent.com/71660299/155902807-668ea46e-31ea-418d-a50a-656fa0fb6f84.png">
 
 
 
@@ -117,24 +179,10 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 ### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
-Syntax highlighted code block
+ `Code` 
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
