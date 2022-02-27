@@ -148,6 +148,8 @@ The results were as followed:
 
 <p align = 'center'><img width="455" alt="Screen Shot 2022-02-27 at 5 36 32 PM" src="https://user-images.githubusercontent.com/71660299/155902807-668ea46e-31ea-418d-a50a-656fa0fb6f84.png">
     
+In this instance, the Random Forest Regressor preformed the best, shortly followed by the XGBoost. All LOWESS regressors (using Tricubic, Epanechnikov, and Quartic) are fairly close to one another. 
+    
     
 #### Plots
     
