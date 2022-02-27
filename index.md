@@ -142,9 +142,9 @@ for i in range(10):
 
 ```
     
-    #### Plots
+#### Plots
     
-    <img width="266" alt="Screen Shot 2022-02-27 at 4 19 13 PM" src="https://user-images.githubusercontent.com/71660299/155904420-375355ad-3b73-4829-91d9-6415290db199.png">
+<p align = 'center'><img width="266" alt="Screen Shot 2022-02-27 at 4 19 13 PM" src="https://user-images.githubusercontent.com/71660299/155904420-375355ad-3b73-4829-91d9-6415290db199.png">
     
 
     
