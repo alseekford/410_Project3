@@ -94,7 +94,7 @@ la la la
   I included the K-Fold Cross Validation inside the loop to increase validity.
   
   ```markdown
- `mse_tri = []
+mse_tri = []
 mse_epa = []
 mse_quar = []
 mse_blwr = []
@@ -138,7 +138,7 @@ for i in range(10):
     # XGBOOST
     model_xgb.fit(xtrain,ytrain)
     yhat_xgb = model_xgb.predict(xtest)
-    mse_xgb.append(mse(ytest,yhat_xgb))` 
+    mse_xgb.append(mse(ytest,yhat_xgb))
 
 ```
     
