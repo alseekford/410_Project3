@@ -142,11 +142,26 @@ for i in range(10):
 
 ```
     
-    #### 
+    #### Plots
+    
+    <img width="266" alt="Screen Shot 2022-02-27 at 4 19 13 PM" src="https://user-images.githubusercontent.com/71660299/155904420-375355ad-3b73-4829-91d9-6415290db199.png">
+    
+
+    
+    
   
 The results were as followed: 
 
 <p align = 'center'> <img width="455" alt="Screen Shot 2022-02-27 at 5 36 32 PM" src="https://user-images.githubusercontent.com/71660299/155902807-668ea46e-31ea-418d-a50a-656fa0fb6f84.png">
+
+<img width="262" alt="Screen Shot 2022-02-27 at 4 19 24 PM" src="https://user-images.githubusercontent.com/71660299/155904425-7b1238eb-708e-43cf-abf0-264662011b2c.png">
+    
+    <img width="260" alt="Screen Shot 2022-02-27 at 4 19 36 PM" src="https://user-images.githubusercontent.com/71660299/155904430-87cad93c-e74d-465f-97f9-7944e9414345.png">
+    
+    <img width="267" alt="Screen Shot 2022-02-27 at 4 19 01 PM" src="https://user-images.githubusercontent.com/71660299/155904434-559ee32a-b424-41db-a5f2-c3faf7399736.png">
+
+    <img width="261" alt="Screen Shot 2022-02-27 at 4 19 46 PM" src="https://user-images.githubusercontent.com/71660299/155904437-d5d02a81-9caf-4268-a8ec-f91312ed5656.png">
+
 
 
 
