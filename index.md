@@ -142,30 +142,12 @@ for i in range(10):
 
 ```
   
-  The results were as followed: 
-  <img width="455" alt="Screen Shot 2022-02-27 at 5 36 32 PM" src="https://user-images.githubusercontent.com/71660299/155902807-668ea46e-31ea-418d-a50a-656fa0fb6f84.png">
+The results were as followed: 
+
+<p align = 'center'> <img width="455" alt="Screen Shot 2022-02-27 at 5 36 32 PM" src="https://user-images.githubusercontent.com/71660299/155902807-668ea46e-31ea-418d-a50a-656fa0fb6f84.png">
 
 
 
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/alseekford/410_Project3/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-
-```markdown
- `Code` 
-
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/alseekford/410_Project3/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
 ### Support or Contact
 
