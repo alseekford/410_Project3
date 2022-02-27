@@ -142,17 +142,18 @@ for i in range(10):
 
 ```
     
-#### Plots
-    
-<p align = 'center'><img width="266" alt="Screen Shot 2022-02-27 at 4 19 13 PM" src="https://user-images.githubusercontent.com/71660299/155904420-375355ad-3b73-4829-91d9-6415290db199.png">
-    
 
-    
-    
   
 The results were as followed: 
 
 <p align = 'center'><img width="455" alt="Screen Shot 2022-02-27 at 5 36 32 PM" src="https://user-images.githubusercontent.com/71660299/155902807-668ea46e-31ea-418d-a50a-656fa0fb6f84.png">
+    
+    
+#### Plots
+    
+LOWESS: 
+    
+<p align = 'center'><img width="266" alt="Screen Shot 2022-02-27 at 4 19 13 PM" src="https://user-images.githubusercontent.com/71660299/155904420-375355ad-3b73-4829-91d9-6415290db199.png">
 
 <p align = 'center'><img width="262" alt="Screen Shot 2022-02-27 at 4 19 24 PM" src="https://user-images.githubusercontent.com/71660299/155904425-7b1238eb-708e-43cf-abf0-264662011b2c.png">
     
