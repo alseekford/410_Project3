@@ -24,8 +24,7 @@ Stemming from Linear Regression, LOWESS can be considered a non-parametric algor
 Prediction Equation for Locally Weighted Linear Regression: 
 
 <p align = 'center'> <img width="306" alt="Screen Shot 2022-02-12 at 11 19 23 PM" src="https://user-images.githubusercontent.com/71660299/153738433-1c60e39b-c996-48df-8b3d-4cea7e03a88f.png"> 
-
-- *yhat* is obtained as a different linear combination of the values of y
+    - *yhat* is obtained as a different linear combination of the values of y
 
 
 
@@ -33,13 +32,9 @@ Prediction Equation for Locally Weighted Linear Regression:
 
 First, linear regression - the assumption that: 
 <p align = 'center'>    <img width="171" alt="Screen Shot 2022-02-12 at 11 15 56 PM" src="https://user-images.githubusercontent.com/71660299/153738371-656b4681-e83f-4daf-8322-3f9646b9b8d3.png">
-    
-
-So, if we pre-multiply this equation with a **matrix** of weights we get: 
+    So, if we pre-multiply this equation with a **matrix** of weights we get: 
     <p align = 'center'> <img width="333" alt="Screen Shot 2022-02-12 at 11 19 48 PM" src="https://user-images.githubusercontent.com/71660299/153738443-5b0e3cc1-36f2-478e-a0f5-5302de978eef.png">. 
-       
-  
-Keep in mind here that *the "weights" are on the main diagonal and the rest of the elements are 0*. 
+        Keep in mind here that *the "weights" are on the main diagonal and the rest of the elements are 0*. 
 - The independent observations are the rows of the matrix *X* 
 - Each row has a given number of columns (*number of features*), denoted by *p*. 
 - Thus, every row is a vector in R^*p*. 
