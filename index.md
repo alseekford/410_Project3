@@ -100,7 +100,7 @@ Finally, that takes us to the locally weighted regression we have:
   
   
 
-#### Gradient Boosting
+### Gradient Boosting
 la la la
 
 
