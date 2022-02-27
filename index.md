@@ -1,13 +1,4 @@
-TODO:
-Create a new Github page with a presentation on the concepts of Multivariate Regression Analysis and Gradient Boosting. Include a presentation of Extreme Gradient Boosting (xgboost).
 
-Apply the regression methods (including lowess and boosted lowess) to real data sets, such as "Cars" and "Boston Housing Data".  Record the cross-validated mean square errors and the mean absolute errors.
-
-For each method and data set report the crossvalidated mean square error and determine which method is achieveng the better results.
-
-In this paper you should also include theoretical considerations, examples of Python coding and plots. 
-
-The final results should be clearly stated.
 
 ## Overview
 
@@ -15,6 +6,10 @@ For project three, I applied two regression techniques, Locally Weighted Linear 
 
 Snippet of Dataset:
 <img width="1019" alt="Screen Shot 2022-02-27 at 4 28 58 PM" src="https://user-images.githubusercontent.com/71660299/155900623-33829067-50e4-4d7d-9f78-c22768ffe3e7.png">
+
+Scatterplot:
+<p align = 'center'> <img width="537" alt="Screen Shot 2022-02-27 at 4 18 48 PM" src="https://user-images.githubusercontent.com/71660299/155904203-ba043923-ef8f-4187-a195-7c43d51e6663.png">
+
 
 
 ## Locally Weighted Linear Regression (LOWESS)
@@ -37,7 +32,7 @@ First, linear regression - the assumption that:
     
 So, if we pre-multiply this equation with a **matrix** of weights we get: 
     
-<p align = 'center'> <img width="333" alt="Screen Shot 2022-02-12 at 11 19 48 PM" src="https://user-images.githubusercontent.com/71660299/153738443-5b0e3cc1-36f2-478e-a0f5-5302de978eef.png">. 
+<p align = 'center'><img width="333" alt="Screen Shot 2022-02-12 at 11 19 48 PM" src="https://user-images.githubusercontent.com/71660299/153738443-5b0e3cc1-36f2-478e-a0f5-5302de978eef.png">. 
         
 Keep in mind here that *the "weights" are on the main diagonal and the rest of the elements are 0*. 
 - The independent observations are the rows of the matrix *X* 
@@ -47,7 +42,7 @@ Keep in mind here that *the "weights" are on the main diagonal and the rest of t
 
 As a result, this equation is as follows: 
     
-<p align = 'center'> <img width="471" alt="Screen Shot 2022-02-12 at 11 21 10 PM" src="https://user-images.githubusercontent.com/71660299/153738473-32a25afa-f337-46b9-befd-6945e3f18e4e.png">
+<p align = 'center'><img width="471" alt="Screen Shot 2022-02-12 at 11 21 10 PM" src="https://user-images.githubusercontent.com/71660299/153738473-32a25afa-f337-46b9-befd-6945e3f18e4e.png">
   
 - We shall have $n$ differenct weight vectors because we have $n$ different observations. 
       
@@ -60,20 +55,20 @@ As a result, this equation is as follows:
   
 - We solve for *beta* (by assuming that *X^TX* is invertible): 
     
-<p align = 'center'> <img width="415" alt="Screen Shot 2022-02-12 at 11 22 31 PM" src="https://user-images.githubusercontent.com/71660299/153738494-34e34fe8-6d8e-4bf8-836c-36cc95c3e7aa.png">
+<p align = 'center'><img width="415" alt="Screen Shot 2022-02-12 at 11 22 31 PM" src="https://user-images.githubusercontent.com/71660299/153738494-34e34fe8-6d8e-4bf8-836c-36cc95c3e7aa.png">
   
 - We take the expected value of this equation and obtain: 
     
-<p align = 'center'> <img width="222" alt="Screen Shot 2022-02-12 at 11 22 55 PM" src="https://user-images.githubusercontent.com/71660299/153738503-898e6df6-59bf-4b19-a30e-dc46c0ae5f33.png">
+<p align = 'center'><img width="222" alt="Screen Shot 2022-02-12 at 11 22 55 PM" src="https://user-images.githubusercontent.com/71660299/153738503-898e6df6-59bf-4b19-a30e-dc46c0ae5f33.png">
   
 - Therefore, the predictions we make are: 
     
-<p align = 'center'> <img width="97" alt="Screen Shot 2022-02-12 at 11 23 32 PM" src="https://user-images.githubusercontent.com/71660299/153738521-a46d9795-d3ce-4b79-802d-408f5381a789.png">
+<p align = 'center'><img width="97" alt="Screen Shot 2022-02-12 at 11 23 32 PM" src="https://user-images.githubusercontent.com/71660299/153738521-a46d9795-d3ce-4b79-802d-408f5381a789.png">
    
     
 Finally, that takes us to the locally weighted regression we have:
     
-<p align = 'center'> <img width="306" alt="Screen Shot 2022-02-12 at 11 19 23 PM" src="https://user-images.githubusercontent.com/71660299/153738433-1c60e39b-c996-48df-8b3d-4cea7e03a88f.png">
+<p align = 'center'><img width="306" alt="Screen Shot 2022-02-12 at 11 19 23 PM" src="https://user-images.githubusercontent.com/71660299/153738433-1c60e39b-c996-48df-8b3d-4cea7e03a88f.png">
  
 **In Locally Weighted Linear Regression, the predictions made are a linear combination of the actual observed values of the dependent variable.**
   
@@ -146,6 +141,8 @@ for i in range(10):
     mse_xgb.append(mse(ytest,yhat_xgb))` 
 
 ```
+    
+    #### 
   
 The results were as followed: 
 
