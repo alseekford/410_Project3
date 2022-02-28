@@ -102,8 +102,7 @@ The "boost" comes from the learning aspect. In order to make predictions via XGB
   
 ### Code and Results
   
-  
-  I included the K-Fold Cross Validation inside the loop to increase validity.
+I included the K-Fold Cross Validation inside the loop to increase validity.
   
   ```markdown
 mse_tri = []
