@@ -7,8 +7,8 @@ For project three, I applied two regression techniques, Locally Weighted Linear 
 Snippet of Dataset:
 <img width="1019" alt="Screen Shot 2022-02-27 at 4 28 58 PM" src="https://user-images.githubusercontent.com/71660299/155900623-33829067-50e4-4d7d-9f78-c22768ffe3e7.png">
 
-Scatterplot of the Data:
-<p align = 'center'> <img width="537" alt="Screen Shot 2022-02-27 at 4 18 48 PM" src="https://user-images.githubusercontent.com/71660299/155904203-ba043923-ef8f-4187-a195-7c43d51e6663.png">
+Scatterplots of the Data:
+<img width="537" alt="Screen Shot 2022-02-27 at 4 18 48 PM" src="https://user-images.githubusercontent.com/71660299/155904203-ba043923-ef8f-4187-a195-7c43d51e6663.png"><img width="512" alt="Screen Shot 2022-02-28 at 2 01 45 PM" src="https://user-images.githubusercontent.com/71660299/156042700-e643ce47-a85c-4a1f-b11b-9c3fd3dfbdee.png"><img width="527" alt="Screen Shot 2022-02-28 at 2 03 27 PM" src="https://user-images.githubusercontent.com/71660299/156042918-3092a91e-e8f3-4cd4-841a-05d34b613c07.png">
 
 
 
