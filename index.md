@@ -85,7 +85,19 @@ is better than the old one, $F.$
 
 
 ## Extreme Gradient Boosting
-la la la 
+
+Extreme gradient boosting using the concept of gain to compare splits. 
+    
+<p align = 'center'><img width="704" alt="Screen Shot 2022-02-27 at 6 58 46 PM" src="https://user-images.githubusercontent.com/71660299/155905602-0c92c36c-afcd-4cec-ab03-8cbc5b6132e5.png">  
+    
+Lambda and Gamma are both hyperparameters. Lambda is a regularization parameter that reduces the prediction’s sensitivity to individual observations, whereas Gamma is the minimum loss reduction required to make a further partition on a leaf node of the tree (SOURCE).
+    
+The "boost" comes from the learning aspect. In order to make predictions via XGBoost, specifically the first predictions, the initial prediction is added with the learning rate, and multiplied by the prediction. Then, these residuals are used to construct another decision tree, and this process is repeated until the maximum number of estimators is reached. Once the training of the model is complete, the predictions made by the XGBoost model as a whole are the sum of the initial prediction and the predictions made by each individual decision tree multiplied by the learning rate... 
+    
+<p align = 'center'>Like this: 
+    
+<p align = 'center'><img width="660" alt="Screen Shot 2022-02-27 at 7 03 33 PM" src="https://user-images.githubusercontent.com/71660299/155905782-576c8a5c-d0d0-40c0-9cb9-fdaee1fbf61d.png"> (SOURCE)
+
 
   
 ## Code and Results
