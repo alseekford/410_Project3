@@ -77,10 +77,9 @@ Finally, that takes us to the locally weighted regression we have:
 
 ### Gradient Boosting
     
-Assume you have an regressor $F$ and, for the observation $x_i$ we make the prediction $F(x_i)$. To improve the predictions, we can regard $F$ as a 'weak learner' and therefore train a decision tree (we can call it $h$) where the new output is $y_i-F(x_i)$. Thus, there are increased chances that the new regressor
+To improve the predictions, we can use gradient boosting. We regard $F$ as a 'weak learner' and therefore train a decision tree (we can call it $h$) where the new output is $y_i-F(x_i)$. Thus, there are increased chances that the new regressor: 
 
-$$\large F + h$$ 
-
+    $$\large F + h$$ 
 is better than the old one, $F.$
 
 
